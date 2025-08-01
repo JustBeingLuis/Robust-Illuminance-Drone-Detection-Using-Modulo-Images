@@ -1,37 +1,37 @@
 # 🛰️ Robust Illuminance Drone Detection Using Modulo Images
 
-Este repositorio contiene el código y los recursos asociados al trabajo de investigación **"Robust Illuminance Drone Detection Using Modulo Images"**, presentado en la **XXII Conferencia Colombiana de Tecnologías de la Información y Comunicaciones - STSIVA 2025**  
-🔗 [Sitio oficial de STSIVA](https://stsiva.ieee.org.co/)
+This repository contains the code and resources for the research work **"Robust Illuminance Drone Detection Using Modulo Images"**, presented at the **XXII Colombian Conference on Information and Communication Technologies - STSIVA 2025**  
+🔗 [Official STSIVA Website](https://stsiva.ieee.org.co/)
 
-## 📌 Descripción
+## 📌 Description
 
-El objetivo principal de esta investigación es abordar el problema de la detección de drones en entornos con condiciones extremas de iluminación, donde los sensores tradicionales (CCD/CMOS) sufren de saturación y pérdida de información.
+The main objective of this research is to address the problem of drone detection in environments with extreme lighting conditions, where traditional sensors (CCD/CMOS) suffer from saturation and information loss.
 
-Para ello, se propone una metodología basada en imágenes *modulo*, capturadas con sensores *modulo-ADC*, que permiten preservar estructuras de la escena incluso en situaciones de sobreexposición. A diferencia de enfoques tradicionales que requieren reconstrucción HDR, este trabajo presenta un modelo **YOLOv11** ajustado directamente sobre imágenes modulo, logrando detección precisa con menor costo computacional.
+To tackle this, we propose a methodology based on *modulo images*, captured with *modulo-ADC* sensors, which preserve scene structures even under overexposure. Unlike traditional approaches that require HDR reconstruction, this work presents a **YOLOv11** model fine-tuned directly on modulo images, achieving accurate detection with lower computational cost.
 
-## 🧠 Principales contribuciones
+## 🧠 Main Contributions
 
-- ✅ Ajuste fino (*fine-tuning*) de **YOLOv11** sobre datos modulo sin reconstrucción HDR.
-- ✅ Detección robusta de drones en distintos niveles de exposición (α = 1.5, 2, 3).
-- ✅ Evaluación comparativa contra imágenes saturadas y reconstrucciones HDR (SPUD y AHFD).
-- ✅ Reducción del tiempo de inferencia manteniendo alta precisión (F1-score > 91%).
+- ✅ Fine-tuning of **YOLOv11** on modulo data without HDR reconstruction.
+- ✅ Robust drone detection at different exposure levels (α = 1.5, 2, 3).
+- ✅ Comparative evaluation against saturated images and HDR reconstructions (SPUD and AHFD).
+- ✅ Reduced inference time while maintaining high accuracy (F1-score > 91%).
 
-## ⚙️ Tecnologías y herramientas
+## ⚙️ Technologies and Tools
 
 - Python 3.10+
 - YOLOv11 (Ultralytics)
-- Google Colab (GPU Tesla T4)
+- Google Colab (Tesla T4 GPU)
 - Numpy, OpenCV, Matplotlib
 - Dataset: [UAV Drone Dataset - Kaggle](https://www.kaggle.com/datasets/dasmehdixtr/drone-dataset-uav)
 
-## 📊 Resultados
+## 📊 Results
 
-- F1-Score superior al 91% en condiciones de alta exposición.
-- Rendimiento comparable con reconstrucciones HDR, pero con menor latencia.
-- Modelo optimizado para despliegue en tiempo real.
+- F1-Score above 91% under high exposure conditions.
+- Performance comparable to HDR reconstructions, but with lower latency.
+- Model optimized for real-time deployment.
 
-## 📄 Publicación
+## 📄 Publication
 
 > **Luis Toscano-Palomino**, Kebin Contreras, Brayan Monroy, Jorge Bacca  
 > _Robust Illuminance Drone Detection Using Modulo Images_  
-> **Conferencia STSIVA 2025**, IEEE Colombia
+> **STSIVA 2025 Conference**, IEEE Colombia
